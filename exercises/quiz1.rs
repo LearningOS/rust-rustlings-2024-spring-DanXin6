@@ -13,10 +13,13 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(price: i32) -> i32 {
+    match price {
+        0..=40 => price *2,
+        _ => price
+    }
+}
 
 // Don't modify this function!
 #[test]
