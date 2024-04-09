@@ -13,6 +13,8 @@ fn sort<T: PartialEq + PartialOrd>(mut array: &mut [T]){
         for j in (1..=i).rev() {
             if array[j] < array[j -1] {
                 array.swap(j, j-1);
+            } else {
+                break;
             }
         }
     }
